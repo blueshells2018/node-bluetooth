@@ -17,14 +17,29 @@ gamepad.detectDevices();
 
 
 let konami_code = [
-  {"verb":"down","id":0,"num":0},
-  {"verb":"up","id":0,"num":0},
-  {"verb":"down","id":0,"num":2},
-  {"verb":"up","id":0,"num":2},
   {"verb":"down","id":0,"num":3},
   {"verb":"up","id":0,"num":3},
+  {"verb":"down","id":0,"num":3},
+  {"verb":"up","id":0,"num":3},
+  
+  {"verb":"down","id":0,"num":0},
+  {"verb":"up","id":0,"num":0},
+  {"verb":"down","id":0,"num":0},
+  {"verb":"up","id":0,"num":0},
+  
+  {"verb":"down","id":0,"num":2},
+  {"verb":"up","id":0,"num":2},
   {"verb":"down","id":0,"num":1},
-  {"verb":"up","id":0,"num":1}
+  {"verb":"up","id":0,"num":1},
+  {"verb":"down","id":0,"num":2},
+  {"verb":"up","id":0,"num":2},
+  {"verb":"down","id":0,"num":1},
+  {"verb":"up","id":0,"num":1},
+  
+  {"verb":"down","id":0,"num":5},
+  {"verb":"up","id":0,"num":5},
+  {"verb":"down","id":0,"num":4},
+  {"verb":"up","id":0,"num":4}
 ];
 
 let current_index = -1; // value before game starts

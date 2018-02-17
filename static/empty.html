@@ -9,14 +9,15 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
   <script>
-   let roommsg = {"type":"room","room":"morse"};
+   let roommsg = {"type":"room","room":"empty"};
   </script>
   <script src="./app.js" defer></script>
 </head>
-<body class="bg-warning">
-  <h1> Communications room </h1>
-  <input type="text" autocomplete=off class="form-control input-lg" placeholder="type your code">
-  <button class="btn btn-default btn-success btn-lg">send your code</button>
+<body class="bg-info">
+<div class="bs-callout bs-callout-primary">
+  <h1> Empty room </h1>
+  <img src="http://i0.kym-cdn.com/photos/images/original/000/186/610/thankyou.png" alt="">
+</div>
 </body>
   <script>
    
@@ -24,7 +25,7 @@
    let input = document.querySelector("input");
    
    button.addEventListener("click", function(){
-    let answermsg = {"type":"answer","room":"morse", answer: input.value}
+    let answermsg = {"type":"answer","room":"password", answer: input.value}
     exampleSocket.send(JSON.stringify(answermsg)); 
    });
   </script>

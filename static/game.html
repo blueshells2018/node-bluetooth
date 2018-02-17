@@ -1,31 +1,22 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+
   <script>
-   let roommsg = {"type":"room","room":"morse"};
+   let roommsg = {"type":"room","room":"konami"};
   </script>
   <script src="./app.js" defer></script>
 </head>
-<body class="bg-warning">
-  <h1> Communications room </h1>
-  <input type="text" autocomplete=off class="form-control input-lg" placeholder="type your code">
-  <button class="btn btn-default btn-success btn-lg">send your code</button>
+<body class="bg-info">
+  <h1> Game room </h1>
+  <p>type <em>the</em> code on the gamepad!</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/NES-Console-Set.jpg/1200px-NES-Console-Set.jpg" class="img-responsive" alt="Responsive image">
+  
 </body>
-  <script>
-   
-   let button = document.querySelector("button");
-   let input = document.querySelector("input");
-   
-   button.addEventListener("click", function(){
-    let answermsg = {"type":"answer","room":"morse", answer: input.value}
-    exampleSocket.send(JSON.stringify(answermsg)); 
-   });
-  </script>
 </html>

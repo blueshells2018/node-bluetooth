@@ -53,6 +53,12 @@ app.ws('/echo', function(ws, req) {
           morseRoom.success();
         }
       }
+
+      if (obj.room === "password") {
+        if (obj.answer === "adminadmin") {
+          passwordRoomSuccess();
+        }
+      }
       
       
     }
@@ -61,6 +67,8 @@ app.ws('/echo', function(ws, req) {
     
   });
 });
+
+
 
 var request = require('request');
 
