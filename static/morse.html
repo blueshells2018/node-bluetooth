@@ -1,0 +1,22 @@
+<html>
+<head>
+  <script>
+   let roommsg = {"type":"room","room":"morse"};
+  </script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <input type="text" autocomplete=off >
+  <button>send</button>
+</body>
+  <script>
+   
+   let button = document.querySelector("button");
+   let input = document.querySelector("input");
+   
+   button.addEventListener("click", function(){
+    let answermsg = {"type":"answer","room":"morse", answer: input.value}
+    exampleSocket.send(JSON.stringify(answermsg)); 
+   });
+  </script>
+</html>
